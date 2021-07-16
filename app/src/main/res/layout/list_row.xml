@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:src="@color/purple_200"
+        android:layout_width="140dp"
+        android:layout_height="72dp"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_toRightOf="@id/cover"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/txtPriceSales"
+        android:layout_toRightOf="@id/cover"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:maxLines="2"
+        android:maxLength="50"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="$100"/>
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_toRightOf="@id/txtPriceSales"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:maxLines="2"
+        android:maxLength="50"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="from"/>
+
+    <TextView
+        android:id="@+id/txtPriceOri"
+        android:layout_toRightOf="@id/txtFrom"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:maxLines="2"
+        android:maxLength="50"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="$200"/>
+
+    <TextView
+        android:id="@+id/txtOff"
+        android:layout_toRightOf="@id/cover"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPriceSales"
+        android:maxLines="2"
+        android:maxLength="50"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="50% OFF"/>
+
+    <TextView
+        android:id="@+id/txtClick"
+        android:layout_toRightOf="@id/txtOff"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPriceSales"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textSize="12dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="TAP TO KNOW MORE"/>
+
+
+</RelativeLayout>
