@@ -1,23 +1,26 @@
 package com.unikom.ganan;
 
 public class GameSales {
-    int Image;
+    String Image;
     String title;
     float priceSales, priceOri;
-    float discount;
+    int discount;
+    String storeID;
 
-    public GameSales(int image, String title, float priceSales, float priceOri) {
+    public GameSales(String image, String title, float priceSales, float priceOri, String storeID) {
         Image = image;
         this.title = title;
         this.priceSales = priceSales;
         this.priceOri = priceOri;
+        this.storeID = storeID;
+        discount = Math.round((priceOri - priceSales) / priceOri * 100);
     }
 
-    public int getImage() {
+    public String getImage() {
         return Image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         Image = image;
     }
 
@@ -44,4 +47,8 @@ public class GameSales {
     public void setPriceOri(float priceOri) {
         this.priceOri = priceOri;
     }
+
+    public int getDiscount() { return discount; }
+
+    public String getStoreID() { return storeID; }
 }
