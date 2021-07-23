@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         SharkAPI api = new SharkAPI(this);
         api.execute();
-
-
-
     }
 
     public void setItemAdapter(ArrayList<GameSales> arr) {
