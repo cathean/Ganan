@@ -58,7 +58,7 @@ public class SharkAPI extends AsyncTask<String, String, String> {
                             arrSales.getJSONObject(i).getString("title"),
                             Float.parseFloat(arrSales.getJSONObject(i).getString("salePrice")),
                             Float.parseFloat(arrSales.getJSONObject(i).getString("normalPrice")),
-                            arrSales.getJSONObject(i).getString("gameID"))
+                            arrSales.getJSONObject(i).getString("storeID"))
                     );
                 }
             }

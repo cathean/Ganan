@@ -1,6 +1,7 @@
 package com.unikom.ganan;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -46,6 +47,7 @@ public class StoreAPI extends AsyncTask<String, String, String> {
         JSONArray arrStores = null;
         try {
             arrStores = new JSONArray(s);
+            Log.d("cekeror", String.valueOf(arrStores.length()));
             m.StoreAdapter(arrStores);
         } catch (JSONException e) {
             e.printStackTrace();

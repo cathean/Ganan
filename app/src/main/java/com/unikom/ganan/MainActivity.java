@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("GAME_TITLE", arr.get(position).getTitle());
                 intent.putExtra("GAME_IMAGE", arr.get(position).getImage());
                 intent.putExtra("GAME_PRICEORI", arr.get(position).getPriceOri());
-                intent.putExtra("GAME_PRICESALES", arr.get(position).getPriceOri());
+                intent.putExtra("GAME_PRICESALES", arr.get(position).getPriceSales());
                 intent.putExtra("GAME_DISCOUNT", arr.get(position).getDiscount());
                 startActivity(intent);
             }
