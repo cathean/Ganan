@@ -65,7 +65,7 @@ public class DiscountActivity extends AppCompatActivity {
             @Override
             public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
                 //Set Resolusi
-                Bitmap resizedBitmap = Bitmap.createScaledBitmap(loadedImage, 200, 90, false);
+                Bitmap resizedBitmap = Bitmap.createScaledBitmap(loadedImage, 142, 204, false);
 
 
                 //Set ke gambar
