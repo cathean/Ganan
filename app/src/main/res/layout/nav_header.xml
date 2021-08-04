@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#E91E63"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/logo"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganan"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:paddingTop="8dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Games on Sales"
+        android:textColor="#ffffff"></TextView>
+
+
+</LinearLayout>
